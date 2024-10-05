@@ -21,10 +21,10 @@ const Footer = () => {
                 <div className=''>
                     <p className='text-xl font-medium mb-5'>COMPANY</p>
                     <ul className='flex flex-col gap-2 text-gray-600'>
-                        <li>Home</li>
-                        <li>About Us</li>
-                        <li>Contact Us</li>
-                        <li>Privacy Policy</li>
+                        <NavLink onClick={() => { window.scroll(0, 0) }} to='/' ><p className=''>Home</p></NavLink>
+                        <NavLink onClick={() => { window.scroll(0, 0) }} to='/doctors' ><p className=''>All Doctors</p></NavLink>
+                        <NavLink onClick={() => { window.scroll(0, 0) }} to='/about' ><p className=''>About</p></NavLink>
+                        <NavLink onClick={() => { window.scroll(0, 0) }} to='/contact' ><p className=''>Contact</p></NavLink>
                     </ul>
                 </div>
                 {/*----Right section --*/}
